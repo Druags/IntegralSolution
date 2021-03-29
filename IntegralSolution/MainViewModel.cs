@@ -12,7 +12,7 @@ namespace IntegralSolution
         public MainViewModel()
         {
             this.Title = "Graph";
-            this.Points=new List<DataPoint>();
+            this.Points = new List<DataPoint>();
         }
 
         public string Title { get; private set; }

@@ -10,3 +10,8 @@ C:\Users\Artem\Desktop\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibr
 C:\Users\Artem\Desktop\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibrary.dll
 C:\Users\Artem\Desktop\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibrary.pdb
 C:\Users\Artem\Desktop\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibrary.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Mochalov\IntegralSolution\CalculateLibrary\bin\Debug\CalculateLibrary.dll
+C:\Users\User\Desktop\Mochalov\IntegralSolution\CalculateLibrary\bin\Debug\CalculateLibrary.pdb
+C:\Users\User\Desktop\Mochalov\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibrary.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Mochalov\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibrary.dll
+C:\Users\User\Desktop\Mochalov\IntegralSolution\CalculateLibrary\obj\Debug\CalculateLibrary.pdb

@@ -12,7 +12,6 @@ namespace CalculateLibrary
         {
             double h = (b - a) / n;
             a += h * 0.5;
-
             double sum = 0;
 
             for (int i = 0; i < n; i++)
@@ -20,8 +19,7 @@ namespace CalculateLibrary
                 sum += f(a + h * i);
             }
 
-            return sum*h;
-
+            return sum * h;
         }
     }
 }

@@ -18,7 +18,6 @@ using OxyPlot;
 
 namespace IntegralSolution
 {
-
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -53,8 +52,47 @@ namespace IntegralSolution
             graph.InvalidatePlot(true);
         }
 
-        private ICollection<(double Time, int PointCount)> Calculate()
+        public void Checking(ref string lower, ref string upper, ref string n, ref string error)
         {
+            //string error = "";
+            char[] LowerArray = lower.ToCharArray();
+            char[] UpperArray = upper.ToCharArray();
+            char[] NArray = n.ToCharArray();
+
+            foreach (char c in LowerArray)
+            {
+                if (!Char.IsNumber(c))
+                {
+                    error = "not a number in lower index, enter number";
+                    tbLowerBound.Text = "10";
+                }
+            }
+            foreach (char c in UpperArray)
+            {
+                if (!Char.IsNumber(c))
+                {
+                    error = "not a number in upper index, enter number";
+                    tbUpperBound.Text = "10";
+                }
+            }
+            foreach (char c in NArray)
+            {
+                if (!Char.IsNumber(c))
+                {
+                    error = "not a number in N, enter number";
+                    tbN.Text = "10000";
+                }
+            }
+        }
+
+        public ICollection<(double Time, int PointCount)> Calculate()
+        {
+            string lower = tbLowerBound.Text;
+            string upper = tbUpperBound.Text;
+            string N = tbN.Text;
+            string error = "";
+            Checking(ref lower, ref upper, ref N, ref error);
+
             var a = Convert.ToDouble(tbLowerBound.Text);
             var b = Convert.ToDouble(tbUpperBound.Text);
             var n = Convert.ToInt64(tbN.Text);
@@ -72,7 +110,7 @@ namespace IntegralSolution
             }
 
             tbResult.Text = Convert.ToString(result);
-
+            tbErrors.Text = Convert.ToString(error);
             return time;
         }
 
@@ -94,6 +132,7 @@ namespace IntegralSolution
                     }
             }
         }
+
         private void btClear_Click(object sender, RoutedEventArgs e)
         {
             ClearGraph();
