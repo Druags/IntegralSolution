@@ -46,7 +46,7 @@ namespace CalculateLibrary.Tests
         }
 
         [TestMethod]
-        //[ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentException))]
         public void Intergrate_xx_negative_n()
         {
             //arrange

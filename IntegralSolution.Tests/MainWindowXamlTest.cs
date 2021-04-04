@@ -6,7 +6,7 @@ namespace IntegralSolution.Tests
     [TestClass]
     public class MainWindowXamlTest
     {
-        /*[TestMethod]
+        [TestMethod]
         public void Wrong_Variables_Dont_Work_Upper_Index()
 
         {
@@ -14,10 +14,8 @@ namespace IntegralSolution.Tests
             string a = "s";
             string b = "100";
             string n = "10000";
-            MainWindow mainWindow = new MainWindow();
 
             //act
-            double actual = mainWindow.Calculate();
 
             //assert
         }
@@ -44,6 +42,6 @@ namespace IntegralSolution.Tests
             //act
 
             //assert
-        }*/
+        }
     }
 }
